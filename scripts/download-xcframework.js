@@ -4,7 +4,7 @@ const path = require('path');
 
 const pkgPath = path.resolve(__dirname, '..', 'package.json');
 const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8'));
-const { version, iosChecksum } = pkg.conektaElements;
+const { iosVersion, iosChecksum } = pkg.conektaElements;
 
 const xcframeworkDir = path.resolve(__dirname, '..', 'composeKit.xcframework');
 const zipPath = path.resolve(__dirname, '..', 'composeKit.xcframework.zip');
@@ -14,12 +14,12 @@ if (fs.existsSync(xcframeworkDir)) {
   process.exit(0);
 }
 
-const url = `https://github.com/conekta/conekta-elements/releases/download/${version}/composeKit.xcframework.zip`;
+const url = `https://github.com/conekta/conekta-components-ios/releases/download/${iosVersion}/composeKit.xcframework.zip`;
 
-console.log(`[ConektaElements] Downloading composeKit.xcframework (${version})...`);
+console.log(`[ConektaElements] Downloading composeKit.xcframework (${iosVersion})...`);
 
 try {
-  execSync(`curl -L "${url}" -o "${zipPath}"`, { stdio: 'inherit' });
+  execSync(`curl -fL "${url}" -o "${zipPath}"`, { stdio: 'inherit' });
 
   const result = execSync(`echo "${iosChecksum}  ${zipPath}" | shasum -a 256 -c -`, {
     encoding: 'utf8',

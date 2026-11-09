@@ -48,7 +48,7 @@ repositories {
 
 dependencies {
     // Conekta Elements with Compose UI
-    implementation "io.conekta:conekta-elements-compose:${packageJson.conektaElements.version}"
+    implementation "io.conekta:conekta-elements-compose:${packageJson.conektaElements.androidVersion}"
 
     // React Native
     implementation "com.facebook.react:react-android"

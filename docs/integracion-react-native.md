@@ -7,7 +7,7 @@ El SDK de React Native proporciona un wrapper que renderiza directamente la UI n
 | Plataforma   | Versión mínima       |
 |--------------|----------------------|
 | Android      | API 24 (Android 7.0) |
-| iOS          | 14.0                 |
+| iOS          | 15.0                 |
 | React Native | 0.71+                |
 
 > ⚠️ **Indispensable**: Necesitas una **llave pública de Conekta** para utilizar el SDK.
@@ -28,7 +28,7 @@ Después de instalar, ejecuta:
 cd ios && pod install
 ```
 
-`pod install` descarga automáticamente el XCFramework de Compose desde GitHub Releases.
+`pod install` descarga automáticamente el XCFramework de Compose desde los GitHub Releases de [conekta-components-ios](https://github.com/conekta/conekta-components-ios). El XCFramework no incluye el slice de simulador Intel (x86_64), así que los builds de simulador necesitan una Mac con Apple silicon.
 
 ### Android
 

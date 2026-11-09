@@ -38,8 +38,9 @@
     "test:watch": "vitest"
   },
   "conektaElements": {
-    "version": "0.2.0-beta.2",
-    "iosChecksum": "e5fc1a7030756eea3f8cc4c229c178baac9369e4c3ba3238274f03824fdb02b2"
+    "androidVersion": "1.0.0",
+    "iosVersion": "1.1.0-beta.31",
+    "iosChecksum": "70d7eda166c62276ffcc7b9f73f078471dc116320d05adf3ef170180df8c76dd"
   },
   "license": "MIT",
   "peerDependencies": {

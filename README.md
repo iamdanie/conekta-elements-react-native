@@ -7,7 +7,7 @@ React Native wrapper for [Conekta Elements](https://github.com/conekta/conekta-e
 | Platform | Minimum version |
 |----------|----------------|
 | Android  | API 24 (Android 7.0) |
-| iOS      | 14.0 |
+| iOS      | 15.0 |
 | React Native | 0.71+ |
 
 ## Installation
@@ -22,7 +22,7 @@ npm install conekta-elements-react-native
 cd ios && pod install
 ```
 
-`pod install` automatically downloads the Compose XCFramework from GitHub releases.
+`pod install` automatically downloads the Compose XCFramework from the [conekta-components-ios](https://github.com/conekta/conekta-components-ios) GitHub releases. The XCFramework has no Intel (x86_64) simulator slice, so simulator builds need an Apple silicon Mac.
 
 ### Android
 
